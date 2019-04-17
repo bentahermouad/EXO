@@ -114,7 +114,7 @@ view: commandes {
   }
   dimension_group:dimensiondate {
     type:time
-    timeframes: [day_of_week,month,year]
+    timeframes: [day_of_week,day_of_month,day_of_week_index,week,month,month_name,month_num,quarter,quarter_of_year,year]
     sql: ${date_de_commande} ;;
   }
   dimension:  created_quarter {
