@@ -73,7 +73,7 @@ view: commandes {
     sql: ${TABLE}."Produit - Numéro" ;;
   }
 
-  dimension: quantit {
+  measure: quantit {
     type: string
     sql: sum(${TABLE}."Quantité");;
   }
