@@ -75,7 +75,7 @@ view: commandes {
 
   measure: quantit {
     type: string
-    sql: sum(${TABLE}."Quantité");;
+    sql: ${TABLE}."Quantité";;
   }
 
   dimension: remise {
