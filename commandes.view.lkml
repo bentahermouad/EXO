@@ -10,7 +10,7 @@ view: commandes {
   dimension: catgorie {
     type: string
     sql: ${TABLE}."Catégorie"
-    drill_fields:[${souscatgorie}];;
+    ;;
   }
 
   dimension: client__nom {
