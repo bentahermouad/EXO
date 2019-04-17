@@ -4,12 +4,13 @@ view: commandes {
   dimension: bnfices {
     type: string
     sql: ${TABLE}."Bénéfices"
-    drill_fields:[${souscatgorie}];;
+    ;;
   }
 
   dimension: catgorie {
     type: string
-    sql: ${TABLE}."Catégorie" ;;
+    sql: ${TABLE}."Catégorie"
+    drill_fields:[${souscatgorie}];;
   }
 
   dimension: client__nom {
