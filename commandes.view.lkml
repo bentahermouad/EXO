@@ -98,7 +98,7 @@ view: commandes {
     sql: ${TABLE}."Sous-catégorie" ;;
   }
 
-  dimension: ventes {
+  measure: ventes {
     type: string
     sql: ${TABLE}."VENTES" ;;
   }
