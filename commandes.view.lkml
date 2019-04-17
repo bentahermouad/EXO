@@ -34,12 +34,12 @@ view: commandes {
   }
 
   dimension: date_de_commande {
-    type: string
+    type: date
     sql: ${TABLE}."Date de commande" ;;
   }
 
   dimension: date_dexpdition {
-    type: string
+    type: date
     sql: ${TABLE}."Date d'expédition" ;;
   }
 
