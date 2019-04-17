@@ -119,5 +119,5 @@ view: commandes {
   }
   dimension:  created_quarter {
     type: date_quarter
-    sql: ${TABLE}."date de commande" ;;}
+    sql: ${date_de_commande} ;;}
 }
