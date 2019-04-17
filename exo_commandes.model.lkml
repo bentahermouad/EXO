@@ -12,7 +12,11 @@ persist_with: exo_commandes_default_datagroup
 
 
 
-explore: commandes {}
+explore: commandes {
+  join: retours {
+    foreign_key:id_commande
+    }
+}
 
 explore: personnes {}
 
