@@ -100,7 +100,7 @@ view: commandes {
 
   measure: ventes {
     type: string
-    sql: ${TABLE}."VENTES" ;;
+    sql: sum(${TABLE}."VENTES") ;;
   }
 
   dimension: ville {
