@@ -3,7 +3,8 @@ view: commandes {
 
   dimension: bnfices {
     type: string
-    sql: ${TABLE}."Bénéfices" ;;
+    sql: ${TABLE}."Bénéfices"
+    drill_fields:[${souscatgorie}];;
   }
 
   dimension: catgorie {
