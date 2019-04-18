@@ -1,10 +1,10 @@
 view: quantit_by_quarter {
   derived_table: {
     sql: SELECT
-      EXTRACT(YEAR FROM (TO_DATE(commandes."Date de commande",'dd/mm/yyyy' )) )::integer AS "commandes.dimensiondate_year",
+        CONCAT(EXTRACT(YEAR FROM (TO_DATE(commandes."Date de commande",'dd/mm/yyyy' )) )::integer AS "commandes.dimensiondate_year",
 
 
-      decode(TO_CHAR(DATE_TRUNC('month', DATE_TRUNC('quarter', TO_DATE(commandes."Date de commande" ,'dd/mm/yyyy') )), 'MM'),'01','Q1','04','Q2','07','Q3','Q4') AS "commandes.created_quarter",
+      decode(TO_CHAR(DATE_TRUNC('month', DATE_TRUNC('quarter', TO_DATE(commandes."Date de commande" ,'dd/mm/yyyy') )), 'MM'),'01','Q1','04','Q2','07','Q3','Q4') AS "commandes.created_quarter"),
 
 
 
