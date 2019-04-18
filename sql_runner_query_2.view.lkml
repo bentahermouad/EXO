@@ -29,7 +29,7 @@ view: sql_runner_query_2 {
     sql: ${TABLE}."commandes.quantit" ;;
   }
 
-  dimension: quarter {
+  measure: quarter {
     type: string
     sql: ${TABLE}."QUARTER" ;;
   }
