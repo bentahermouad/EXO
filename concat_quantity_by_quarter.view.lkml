@@ -14,7 +14,7 @@ view: concat_quantity_by_quarter {
 
 
 
-Group by 1
+
 order by 1,2 asc
        ;;
   }
