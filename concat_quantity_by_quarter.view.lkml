@@ -13,7 +13,7 @@ view: concat_quantity_by_quarter {
       FROM PUBLIC.COMMANDES  AS commandes, PUBLIC.COMMANDES AS commandes1
 
 
-
+order by 1
 
 order by 1,2 asc
        ;;
