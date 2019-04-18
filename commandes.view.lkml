@@ -3,7 +3,7 @@ view: commandes {
 
   measure: bnfices {
     type: string
-    sql: ${TABLE}."Bénéfices"
+    sql: sum(${TABLE}."Bénéfices")
     ;;
   }
 
