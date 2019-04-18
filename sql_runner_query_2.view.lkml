@@ -15,6 +15,7 @@ view: sql_runner_query_2 {
 
       FROM PUBLIC.COMMANDES  AS commandes
       group by 2
+      order by 2
 
        ;;
   }
