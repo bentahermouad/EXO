@@ -111,9 +111,6 @@ view: commandes {
   measure: count {
     type: count
     drill_fields: []
-  }
-  dimension: Date_de_commande{
-    type:date_time
-    sql: ${date_de_commande} ;;
+
   }
  }
