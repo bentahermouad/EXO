@@ -1,7 +1,7 @@
 view: commandes {
   sql_table_name: PUBLIC.COMMANDES ;;
 
-  dimension: bnfices {
+  measure: bnfices {
     type: string
     sql: ${TABLE}."Bénéfices"
     ;;
@@ -78,7 +78,7 @@ view: commandes {
     sql: sum(${TABLE}."Quantité");;
   }
 
-  dimension: remise {
+  measure: remise {
     type: string
     sql: ${TABLE}."REMISE" ;;
   }
