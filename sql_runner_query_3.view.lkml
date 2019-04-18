@@ -40,7 +40,7 @@ view: sql_runner_query_3 {
     sql: ${TABLE}."sql_runner_query_2.quarter" ;;
   }
 
-  dimension: sql_runner_query_2_commandes_quantit {
+  measure: sql_runner_query_2_commandes_quantit {
     type: number
     sql: ${TABLE}."sql_runner_query_2.commandes_quantit" ;;
   }
