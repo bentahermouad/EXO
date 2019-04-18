@@ -12,10 +12,9 @@ view: sql_runner_query_2 {
 
 
 
-
-
       FROM PUBLIC.COMMANDES  AS commandes
 
+group by 1
 
 
        ;;
