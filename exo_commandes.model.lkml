@@ -23,3 +23,4 @@ explore: personnes {}
 explore: retours {}
 explore: quantit_by_quarter {}
 explore: concat_quantity_by_quarter {}
+explore: sql_runner_query_2 {}
