@@ -26,12 +26,12 @@ view: sql_runner_query_2 {
     drill_fields: [detail*]
   }
 
-  dimension: commandes_quantit {
+  measure: commandes_quantit {
     type: number
     sql: ${TABLE}."commandes.quantit" ;;
   }
 
-  measure: quarter {
+  dimension: quarter {
     type: string
     sql: ${TABLE}."QUARTER" ;;
   }
