@@ -112,5 +112,7 @@ view: commandes {
     type: count
     drill_fields: []
 
+
+
   }
  }

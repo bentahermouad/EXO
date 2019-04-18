@@ -4,11 +4,10 @@ view: sql_runner_query_2 {
 
 
 
-      Concat(EXTRACT(YEAR FROM (TO_DATE(commandes."Date de commande",'dd/mm/yyyy' )) ), ' ' ,
+      Concat(EXTRACT(YEAR FROM (TO_DATE(commandes."Date de commande",'dd/mm/yyyy' )) ), ' ' , decode(TO_CHAR(DATE_TRUNC('month', DATE_TRUNC('quarter', TO_DATE(commandes."Date de commande" ,'dd/mm/yyyy') )), 'MM'),'01','Q1','04','Q2','07','Q3','Q4') ) AS Quarter,
 
 
-      decode(TO_CHAR(DATE_TRUNC('month', DATE_TRUNC('quarter', TO_DATE(commandes."Date de commande" ,'dd/mm/yyyy') )), 'MM'),'01','Q1','04','Q2','07','Q3','Q4') ) AS Quarter,
-      sum(commandes."Quantité") AS "commandes.quantit"
+     sum(commandes."Quantité") AS "commandes.quantit"
 
 
 
