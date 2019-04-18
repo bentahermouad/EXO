@@ -26,3 +26,4 @@ explore: concat_quantity_by_quarter {}
 explore: sql_runner_query_2 {}
 explore: sql_runner_query_3{}
 explore: final_qt_by_quarter {}
+explore: ventes_par_cat_et_sous_cat {}
