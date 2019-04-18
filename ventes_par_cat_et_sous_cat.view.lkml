@@ -29,7 +29,7 @@ view: ventes_par_cat_et_sous_cat {
 
   measure: commandes_ventes {
     type: number
-    sql: ${TABLE}."commandes.ventes" ;;
+    sql: sum(${TABLE}."commandes.ventes") ;;
   }
 
   set: detail {
