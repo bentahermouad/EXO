@@ -19,7 +19,7 @@ view: ventes_par_cat_et_sous_cat {
 
   dimension: commandes_catgorie {
     type: string
-    sql: order by ${TABLE}."commandes.catgorie" ;;
+    sql: ${TABLE}."commandes.catgorie" ;;
   }
 
   dimension: commandes_souscatgorie {
