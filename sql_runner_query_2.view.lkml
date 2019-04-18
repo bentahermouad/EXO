@@ -28,7 +28,7 @@ view: sql_runner_query_2 {
 
   measure: commandes_quantit {
     type: number
-    sql: ${TABLE}."commandes.quantit" ;;
+    sql:sum( ${TABLE}."commandes.quantit" );;
   }
 
   dimension: quarter {
