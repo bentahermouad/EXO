@@ -35,7 +35,7 @@ view: commandes {
 
   dimension: date_de_commande {
     type: date
-    sql: ${TABLE}."Date de commande" ;;
+    sql: date_format(${TABLE}."Date de commande", '%d%m%Y') ;;
   }
 
   dimension: date_dexpdition {
