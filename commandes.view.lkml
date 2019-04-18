@@ -112,12 +112,8 @@ view: commandes {
     type: count
     drill_fields: []
   }
-  dimension_group:dimensiondate {
-    type:time
-    timeframes: [day_of_week,day_of_month,day_of_week_index,week,month,month_name,month_num,quarter,quarter_of_year,year]
+  dimension: Date_de_commande{
+    type:date_time
     sql: ${date_de_commande} ;;
   }
-  dimension:  created_quarter {
-    type: date_quarter
-    sql: ${date_de_commande} ;;}
-}
+ }
