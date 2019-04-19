@@ -86,7 +86,7 @@ view: commandes {
 
   dimension: Respect_de_livraison{
     type: string
-    sql: ${TABLE}."REMISE8" ;;
+    sql: ${TABLE}."Respect_de_livraison" ;;
   }
 
   dimension: rgionprovince {
@@ -108,6 +108,8 @@ view: commandes {
     type: string
     sql: ${TABLE}."VILLE" ;;
   }
+
+
 
   measure: count {
     type: count
