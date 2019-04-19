@@ -23,7 +23,7 @@ view: final_qt_by_quarter {
   }
 
   dimension: quarter {
-    type: string
+    type: date_time
     sql: ${TABLE}."QUARTER" ;;
   }
 
