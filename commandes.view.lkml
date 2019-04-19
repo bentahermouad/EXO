@@ -75,7 +75,7 @@ view: commandes {
   }
 
   measure: quantit {
-    type: string
+    type: number
     sql: sum(${TABLE}."Quantité");;
   }
 
@@ -84,7 +84,7 @@ view: commandes {
     sql: ${TABLE}."REMISE" ;;
   }
 
-  dimension: remise8 {
+  dimension: Respect_de_livraison{
     type: string
     sql: ${TABLE}."REMISE8" ;;
   }
@@ -100,7 +100,7 @@ view: commandes {
   }
 
   measure: ventes {
-    type: string
+    type: number
     sql: sum(${TABLE}."VENTES") ;;
   }
 
