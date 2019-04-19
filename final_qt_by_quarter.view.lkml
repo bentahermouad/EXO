@@ -23,11 +23,11 @@ view: final_qt_by_quarter {
   }
 
   dimension: quarter {
-    type: date_time
+    type: date_quarter
     sql: ${TABLE}."QUARTER" ;;
   }
 
-  dimension: commandes_quantit {
+  measure: commandes_quantit {
     type: number
     sql: ${TABLE}."commandes.quantit" ;;
   }
