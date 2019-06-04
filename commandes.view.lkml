@@ -33,9 +33,12 @@ view: commandes {
     sql: ${TABLE}."Client - Zone géographique" ;;
   }
 
+
+
+
   dimension_group: date_de_commande {
     type: time
-    timeframes: [date,week,quarter,month,year]
+    timeframes: [date,week,quarter,month,year,quarter_of_year]
     sql:${TABLE}."Date de commande" ;;
   }
 
